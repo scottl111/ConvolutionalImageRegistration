@@ -1,0 +1,5 @@
+projectKey=cnn:project
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/cnn:project
+ceTaskId=AVvL-g0-AaCmoNlwFwfj
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVvL-g0-AaCmoNlwFwfj

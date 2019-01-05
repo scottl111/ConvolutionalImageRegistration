@@ -1,0 +1,95 @@
+[debug (25/04/17 21:09:55)] Debug: setLogFile: C:\Users\Lenovo T450\Downloads\SikuliX-1.1.1-SetupLog.txt
+[debug (25/04/17 21:09:55)] RunSetup: ... starting with no args given
+[debug (25/04/17 21:09:55)] RunSetup: Setup: 1.1.1 2017-03-29_10:41 in folder:
+C:\Users\Lenovo T450\Downloads
+[debug (25/04/17 21:09:55)] RunSetup: RunningSystem: Windows 6.1
+[debug (25/04/17 21:09:55)] RunSetup: parent of jar/classes: C:\Users\Lenovo T450\Downloads
+[debug (25/04/17 21:09:55)] RunSetup: RunningJava: Java 8 (amd64) 1.8.0_121-b13
+[debug (25/04/17 21:09:55)] init user preferences
+[debug (25/04/17 21:10:24)] RunSetup: 
+popAsk: --------------------
+The following file(s) will be downloaded to
+C:\Users\Lenovo T450\Downloads
+--- Native support libraries for Windows (sikulixlibs...)
+--- Package 2 ---
+null (Java API)
+Only click NO, if you want to terminate setup now!
+Click YES even if you want to use local copies in Downloads!
+--------------------
+[debug (25/04/17 21:10:28)] FileManager: download to string from:
+https://oss.sonatype.org/content/groups/public/com/sikulix/sikulixlibswin/1.1.1-SNAPSHOT/maven-metadata.xml,
+[debug (25/04/17 21:10:29)] RunSetup: getMavenJar: sikulixlibswin-1.1.1-20170329.230420-154.jar
+[debug (25/04/17 21:10:30)] FileManager: Downloading sikulixlibswin-1.1.1-20170329.230420-154.jar having 10577 KB
+[debug (25/04/17 21:10:41)] FileManager: downloaded 10577 KB to:
+C:\Users\Lenovo T450\AppData\Roaming\Sikulix\SikulixDownloads_201703291041\sikulixlibswin-1.1.1-20170329.230420-154.jar
+[debug (25/04/17 21:10:41)] FileManager: download time: 11
+[debug (25/04/17 21:10:44)] RunSetup: Copied from Downloads: sikulixlibswin
+[debug (25/04/17 21:10:44)] FileManager: resetFolder:
+C:\Users\Lenovo T450\Downloads\SetupStuff\sikulixlibs\windows
+jar:file:/C:/Users/Lenovo T450/Downloads/sikulixlibswin.jar
+[debug (25/04/17 21:10:45)] FileManager: download to string from:
+https://oss.sonatype.org/content/groups/public/com/sikulix/sikulixsetupAPI/1.1.1-SNAPSHOT/maven-metadata.xml,
+[debug (25/04/17 21:10:45)] RunSetup: getMavenJar: sikulixsetupAPI-1.1.1-20170329.231900-143-forsetup.jar
+[debug (25/04/17 21:10:45)] FileManager: Downloading sikulixsetupAPI-1.1.1-20170329.231900-143-forsetup.jar having 9352 KB
+[debug (25/04/17 21:10:54)] FileManager: downloaded 9352 KB to:
+C:\Users\Lenovo T450\AppData\Roaming\Sikulix\SikulixDownloads_201703291041\sikulixsetupAPI-1.1.1-20170329.231900-143-forsetup.jar
+[debug (25/04/17 21:10:54)] FileManager: download time: 8
+[debug (25/04/17 21:10:57)] RunSetup: Copied from Downloads: sikulixapi
+[debug (25/04/17 21:10:57)] FileManager: resetFolder:
+C:\Users\Lenovo T450\Downloads\SetupStuff\Lib
+jar:file:/C:/Users/Lenovo T450/Downloads/sikulixapi.jar
+[debug (25/04/17 21:10:57)] RunSetup: Download ended
+[debug (25/04/17 21:10:57)] RunSetup: Downloads for selected options:
+null null 
+[debug (25/04/17 21:10:57)] RunSetup: adding needed stuff to sikulixapi.jar
+[debug (25/04/17 21:10:57)] FileManager: buildJar: sikulixtemp.jar
+[debug (25/04/17 21:10:57)] FileManager: buildJar: adding: sikulixapi.jar
+[debug (25/04/17 21:10:58)] FileManager: buildJar: adding: sikulixlibswin.jar
+[debug (25/04/17 21:11:00)] FileManager: buildJar: adding sikulixcontent at sikulixlibswin
+[debug (25/04/17 21:11:00)] FileManager: buildJar: adding sikulixcontent at Lib
+[debug (25/04/17 21:11:00)] FileManager: buildJar: completed
+[debug (25/04/17 21:11:00)] RunSetup: renaming sikulixtemp.jar to target jar: sikulixapi.jar
+[debug (25/04/17 21:11:00)] RunSetup: Trying to run functional test: JAVA-API
+[debug (25/04/17 21:11:00)] RunTimeSETUP: addToClasspath:
+file:/C:/Users/Lenovo T450/Downloads/sikulixapi.jar
+[debug (25/04/17 21:11:00)] RunSetup: trying to run org.sikuli.script.Sikulix.testSetup()
+[debug (25/04/17 21:11:00)] RunSetup: class found: class org.sikuli.script.Sikulix
+[debug (25/04/17 21:11:00)] RunSetup: getMethod: public static boolean org.sikuli.script.Sikulix.testSetup()
+[debug (25/04/17 21:11:05)] RunSetup: invoke: public static boolean org.sikuli.script.Sikulix.testSetup()
+[debug (25/04/17 21:11:05)] RunTimeSETUP: exists libs folder at: C:\Users\Lenovo T450\AppData\Roaming\Sikulix\SikulixLibs_201703291041
+[debug (25/04/17 21:11:05)] RunTimeSETUP: libs folder empty or has wrong content
+[debug (25/04/17 21:11:05)] RunTimeSETUP: now exporting libs
+[debug (25/04/17 21:11:05)] RunTimeSETUP: libs to export are at:
+jar:file:/C:/Users/Lenovo T450/Downloads/sikulixapi.jar!/sikulixlibs/windows/libs64
+[debug (25/04/17 21:11:05)] RunTimeSETUP: resourceList: enter
+[debug (25/04/17 21:11:05)] RunTimeSETUP: resourceLocation: (class org.sikuli.setup.RunSetup) /sikulixlibs/windows/libs64
+[debug (25/04/17 21:11:05)] RunTimeSETUP: resourceList: having jar: jar:file:/C:/Users/Lenovo%20T450/Downloads/sikulixapi.jar!/sikulixlibs/windows/libs64
+[debug (25/04/17 21:11:07)] RunTimeSETUP: files exported: 17 from: /sikulixlibs/windows/libs64 to:
+ C:\Users\Lenovo T450\AppData\Roaming\Sikulix\SikulixLibs_201703291041
+[debug (25/04/17 21:11:07)] RunTimeSETUP: addToWindowsSystemPath: added to systempath:
+C:\Users\Lenovo T450\AppData\Roaming\Sikulix\SikulixLibs_201703291041
+[debug (25/04/17 21:11:07)] RunTimeSETUP: checkJavaUsrPath: added to ClassLoader.usrPaths
+[debug (25/04/17 21:12:37)] RunTimeSETUP: loadLib: VisionProxy.dll
+[debug (25/04/17 21:12:37)] Mouse: init start
+[debug (25/04/17 21:12:37)] Mouse: init end
+[debug (25/04/17 21:12:37)] Image: BufferedImage: (100, 100)
+[debug (25/04/17 21:12:37)] Finder: Image: __BufferedImage__: (100x100)
+[debug (25/04/17 21:12:37)] Sikulix: testSetup: Finder setup with image worked
+[debug (25/04/17 21:12:37)] FileManager: tempfile create:
+C:\Users\LENOVO~1\AppData\Local\Temp\Sikulix_261455495\sikuli-4209745717047604781.png
+[debug (25/04/17 21:12:37)] Image: loaded: C:/Users/LENOVO~1/AppData/Local/Temp/Sikulix_261455495/sikuli-4209745717047604781.png (file:/C:/Users/Lenovo T450/AppData/Local/Temp/Sikulix_261455495/sikuli-4209745717047604781.png)
+[debug (25/04/17 21:12:37)] Image: cached: C:/Users/LENOVO~1/AppData/Local/Temp/Sikulix_261455495/sikuli-4209745717047604781.png (29 KB) (# 1 KB 29 -- 0 % of 64 MB)
+[debug (25/04/17 21:12:37)] Sikulix: testSetup: Finder setup with image file worked
+[debug (25/04/17 21:12:38)] Image: reused: C:/Users/LENOVO~1/AppData/Local/Temp/Sikulix_261455495/sikuli-4209745717047604781.png (file:/C:/Users/Lenovo T450/AppData/Local/Temp/Sikulix_261455495/sikuli-4209745717047604781.png)
+[debug (25/04/17 21:12:38)] Region: wait: waiting 3.0 secs for C:/Users/LENOVO~1/AppData/Local/Temp/Sikulix_261455495/sikuli-4209745717047604781.png to appear in S(0)[0,0 1600x900]
+[debug (25/04/17 21:12:38)] Region: wait: C:/Users/LENOVO~1/AppData/Local/Temp/Sikulix_261455495/sikuli-4209745717047604781.png appeared (M[0,0 100x100]@S(S(0)[0,0 1600x900]) S:0.95 C:50,50 [544 msec])
+[debug (25/04/17 21:12:38)] Sikulix: testSetup: Screen.find(imagefile) worked
+[debug (25/04/17 21:12:38)] Image: reused: C:/Users/LENOVO~1/AppData/Local/Temp/Sikulix_261455495/sikuli-4209745717047604781.png (file:/C:/Users/Lenovo T450/AppData/Local/Temp/Sikulix_261455495/sikuli-4209745717047604781.png)
+[debug (25/04/17 21:12:38)] Region: wait: waiting 3.0 secs for C:/Users/LENOVO~1/AppData/Local/Temp/Sikulix_261455495/sikuli-4209745717047604781.png to appear in S(0)[0,0 1600x900]
+[debug (25/04/17 21:12:38)] Region: wait: C:/Users/LENOVO~1/AppData/Local/Temp/Sikulix_261455495/sikuli-4209745717047604781.png appeared (M[0,0 100x100]@S(S(0)[0,0 1600x900]) S:0.95 C:50,50 [278 msec])
+[debug (25/04/17 21:12:38)] Sikulix: testSetup: repeated Screen.find(imagefile) worked
+[debug (25/04/17 21:12:42)] Sikulix: testSetup: Finder.find: worked
+[debug (25/04/17 21:12:47)] RunSetup: ... SikuliX Setup seems to have ended successfully ;-)
+[debug (25/04/17 21:12:47)] RunTimeSETUP: final cleanup
+[debug (25/04/17 21:12:48)] FileManager: deleteFileOrFolder:
+C:\Users\LENOVO~1\AppData\Local\Temp\Sikulix_261455495

@@ -1,0 +1,35 @@
+<!-- 
+   Copyright 2010-2011, Sikuli.org
+   Released under the MIT License.
+
+   This file is for generating JUnit XML output for Hudson.
+   Run this with ant -f <XML-FILE>
+-->
+
+<project default="all" xmlns:jacoco="antlib:org.jacoco.ant">
+   <taskdef uri="antlib:org.jacoco.ant" resource="org/jacoco/ant/antlib.xml">
+      <classpath path="../utils/jacoco/lib/jacocoant.jar"/>
+   </taskdef>
+   <property name="tst-dir" location="build/test" />
+   <path id="classpath.base">
+      <pathelement location="target/sikuli-ide.jar" />
+      <pathelement location="../lib/sikuli-script.jar" />
+   </path>
+   <path id="classpath.test">
+      <pathelement location="../lib/junit-3.8.1.jar" />
+      <pathelement location="${tst-dir}" />
+      <path refid="classpath.base" />
+   </path>
+   <target name="test">
+      <jacoco:coverage>
+         <junit fork="yes" haltonfailure="no" >
+            <sysproperty key="sikuli.testing" value="yes" />
+            <classpath refid="classpath.test" />
+            <formatter type="plain" usefile="false"/>
+            <formatter type="xml"/>
+            <test name="org.sikuli.ide.SikuliIDETestSuite" todir="build"/>
+         </junit>
+      </jacoco:coverage>
+   </target>
+  <target name="all" depends="test" />
+</project>
